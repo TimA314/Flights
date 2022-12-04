@@ -42,7 +42,7 @@
       <input class="form-control" type="number" placeholder="1" />
       <div class="input-group-text">Passengers</div>
       <button type="submit" class="btn-primary btn">
-        Submit
+        <i class="fas fa-search"></i>
       </button>
     </div>
   </div>
@@ -50,12 +50,10 @@
 
 
 
-
-
 <div *ngFor="let flight of searchResult">
   <div class="card text-dark mt-5 text-md-center">
     <div class="card-body">
-      <h6  class="card-title">{{flight.airline}}</h6>
+      <h6 class="card-title">{{flight.airline}}</h6>
       <div class="card-title" style="color:#ff3939">
         {{flight.remainingNumberOfSeats}} remaining seats
       </div>

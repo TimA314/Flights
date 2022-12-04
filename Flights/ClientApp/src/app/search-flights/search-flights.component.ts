@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-flights.component.css']
 })
 export class SearchFlightsComponent implements OnInit {
+
   searchResult: FlightRm[] = [
     {
       airline: "American Airlines",
