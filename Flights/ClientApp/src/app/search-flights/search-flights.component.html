@@ -16,34 +16,34 @@
     </div>
   </div>
 
-  <div class="col">
-    <div class="form-floating">
-      <input type="date" placeholder="From Date" class="form-control" />
-      <label class="text-primary form-label">From Date</label>
+  <div class="row">
+    <div class="col">
+      <div class="form-floating">
+        <input type="date" placeholder="From Date" class="form-control" />
+        <label class="text-primary form-label">From Date</label>
+      </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="form-floating">
-      <input type="date" placeholder="To Date" class="form-control" />
-      <label class="text-primary form-label">To Date</label>
+    <div class="col">
+      <div class="form-floating">
+        <input type="date" placeholder="To Date" class="form-control" />
+        <label class="text-primary form-label">To Date</label>
+      </div>
     </div>
   </div>
 
   <div class="col text-end">
-    <label class="form-label text-primary mt-2">Passengers</label> 
+    <label class="form-label text-primary mt-2">
+      Passengers
+    </label>
   </div>
-
-  <div class="col-6">
+  <div class="col">
     <div class="input-group">
-
       <div class="input-group-text">For</div>
       <input class="form-control" type="number" placeholder="1" />
       <div class="input-group-text">Passengers</div>
-
       <button type="submit" class="btn-primary btn">
         Submit
       </button>
-
     </div>
   </div>
 </div>
@@ -53,5 +53,32 @@
 
 
 <div *ngFor="let flight of searchResult">
-  {{flight}}
+  <div class="card text-dark mt-5 text-md-center">
+    <div class="card-body">
+      <h6  class="card-title">{{flight.airline}}</h6>
+      <div class="card-title" style="color:#ff3939">
+        {{flight.remainingNumberOfSeats}} remaining seats
+      </div>
+
+      <div class="d-grid text-md-center g-2">
+        <div class="row">
+          <div class="col">
+
+            <div class="col m-3">
+
+            </div>
+
+            <div class="col">
+
+            </div>
+
+            <div class="col">
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
