@@ -3,7 +3,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen( c =>
+{
+    c.AddServer(new Microsoft.OpenApi.Models.OpenApiServer
+    {
+        Description = "Development Server",
+        Url = "https://localhost:7077"
+    });
+});
 
 var app = builder.Build();
 
